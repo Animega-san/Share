@@ -29,16 +29,10 @@ loadCSS("//fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic");
       </a>
     </li>
     <li class='social_item-wrapper'>
-      <a class='social_item total_posts' title='Total Posts'>
-        <i class='fa fa-file-text fa-fw social_icon'></i>
-        <script type='text/javascript'>
-		  function postCount(json){
-			var count = json.feed.openSearch$totalResults.$t;
-			document.write(&quot;<span class='count'>&quot; + count + &quot;</span>&quot;);
-		  }
-        </script>
-      	<script src='https://animegasan.blogspot.com/feeds/posts/default?alt=json-in-script&amp;amp;max-results=0&amp;amp;callback=postCount' type='text/javascript'></script>
-        <span class='textsoc'>Posts</span>
+      <a class='social_item social_github' title='Follow our Github'>
+        <i class='fa fa-github fa-fw social_icon'></i>
+        <span class='count'></span>
+        <span class='textsoc'>Followers</span>
       </a>
     </li>
     <li class='social_item-wrapper'>
@@ -69,11 +63,17 @@ loadCSS("//fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic");
         <span class='textsoc'>Followers</span>
       </a>
     </li>
-	<li class='social_item-wrapper'>
-      <a class='social_item social_github' title='Follow our Github'>
-        <i class='fa fa-github fa-fw social_icon'></i>
-        <span class='count'></span>
-        <span class='textsoc'>Followers</span>
+    <li class='social_item-wrapper'>
+      <a class='social_item total_posts' title='Total Posts'>
+        <i class='fa fa-file-text fa-fw social_icon'></i>
+        <script type='text/javascript'>
+		  function postCount(json){
+			var count = json.feed.openSearch$totalResults.$t;
+			document.write("<span class='count'>" + count + "</span>");
+		  }
+        </script>
+      	<script src='https://animegasan.blogspot.com/feeds/posts/default?alt=json-in-script&amp;amp;max-results=0&amp;amp;callback=postCount' type='text/javascript'></script>
+        <span class='textsoc'>Posts</span>
       </a>
     </li>
   </ul>
