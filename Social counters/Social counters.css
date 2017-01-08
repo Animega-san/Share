@@ -1,3 +1,4 @@
+<style type='text/css'>
 /* Social Media */
 #socialcounter{overflow:hidden;margin:0 0 20px 0}
 #socialcounter ul{margin:0;padding:10px 0 0 0;display:table;width:100%}
@@ -30,3 +31,4 @@
 #socialcounter ul li a .textsoc,#socialcounter ul li a .count{display:none}}
 @media screen and (max-width:240px) {
 #socialcounter ul li.social_item-wrapper{display:block;float:none;width:100%}}
+</style>
